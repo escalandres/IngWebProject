@@ -414,6 +414,14 @@ input[type="checkbox" i] {
     height: 80%;
 }
 
+/* .img__right{
+    transform: translateX(8%);
+} */
+
+.section__text__container{
+    width: 75%;
+}
+
 .section__h1{
     font-size: 56px;
     font-weight: 700;
