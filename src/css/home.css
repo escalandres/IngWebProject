@@ -396,13 +396,13 @@ input[type="checkbox" i] {
     width: 50%;
     height: 100%;
     float: left;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 .section__right-container{
     width: 50%;
     height: 100%;
     float: right;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 
 .section__img__container{
