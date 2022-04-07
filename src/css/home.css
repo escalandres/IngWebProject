@@ -16,6 +16,9 @@
     --body-bg: #fbfdfe;
     --dt-darkest: #121a21;
     /* --body-bg: #192229; */
+    --off-white: #f6f6f6;
+    --white: #fff;
+    --font-display: "Ginto Normal","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 
@@ -236,11 +239,12 @@ input[type="checkbox" i] {
 
 
 
-
-
-
-
 /* HomePage section */
+
+/* #homepage{
+    width: 922px;
+    height: 545px;
+} */
 
 .home__container{
     padding: 120px 40px;
@@ -259,7 +263,7 @@ input[type="checkbox" i] {
 }
 
 .home__main-message{
-    font-family: GintoNord,"Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: var(--font-display);
     font-weight: 800;
     font-size: 56px;
     /* font-size: clamp(24px,5vw,44px); */
@@ -355,19 +359,78 @@ input[type="checkbox" i] {
 }
 
 .animation{
-    animation-duration: 2s;
-    animation-name: slideup;
-
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: slideup 4s ease-in-out infinite;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
 }
 
 @keyframes slideup {
-    from {
+    0%{
         transform: translateY(0%);
     }
-    to {
+    50%{
         transform: translateY(-15%);
     }
-    
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+/* Section 1 */
+
+.section-area{
+    /* width: 922px; */
+    height: 535px;
+    padding: 80px 40px;
+}
+
+.section-white{
+    background: var(--white);
+}
+
+.section-grey{
+    background: var(--off-white);
+}
+
+.section__left-container{
+    width: 50%;
+    height: 100%;
+    float: left;
+    border: 3px solid red;
+}
+.section__right-container{
+    width: 50%;
+    height: 100%;
+    float: right;
+    border: 3px solid blue;
+}
+
+.section__img__container{
+    /* transform: translate(8%,0%); */
+}
+
+.section__img{
+    width: 90%;
+    height: 80%;
+}
+
+.section__h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 120%;
+    font-family: var(--font-display);
+    color: var(--not-quite-black);
+}
+
+.section__p{
+    margin-top: 24px;
+    font-size: clamp(16px,2vw,20px);
+    line-height: 1.625;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+    color: var(--not-quite-black);
+    text-rendering: optimizeLegibility;
+    text-align: justify;
 }
