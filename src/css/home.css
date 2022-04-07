@@ -418,6 +418,10 @@ input[type="checkbox" i] {
     transform: translateX(8%);
 } */
 
+.left{
+    transform: translateX(10%);
+}
+
 .section__text__container{
     width: 75%;
 }
