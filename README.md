@@ -1,8 +1,11 @@
 # Chat App Project
 ## Introduction
-Este es el repositorio de Chat App para el proyecto de la UA: Ingeniera Web. 
 
-Fue utilizado: HTML, CSS, JavaScript y Bulma CSS, para la construccion
+Alumno: Andres Rafael Escala Acosta
+Nombre del proyecto: Chat App (nombre provisional)
+
+Este es el repositorio de Chat App para el proyecto de la UA: Ingeniera Web. 
+Se utilizó: HTML, CSS, JavaScript y Bulma CSS, para la construccion de la Homepage
 
 Puede acceder a la Homepage desde: https://escalandres.github.io/IngWebProject/
 
