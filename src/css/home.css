@@ -6,19 +6,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Roboto+Slab:wght@100&display=swap');
 :root{
-    --background-color: rgb(64,78,237);
-    --letter-color: #ffffff;
+    --bluish-purple: rgb(64,78,237);
     --not-quite-dark: #23272a;
     --blue-300: #88c8f7;
     --blue-800: #063251;
-    --height: 1rem;
-    --duration: 0.25s;
+    --letter-color: #ffffff;
     --body-bg: #fbfdfe;
     --dt-darkest: #121a21;
-    /* --body-bg: #192229; */
+    --body-bg-dark: #192229;
     --off-white: #f6f6f6;
     --white: #fff;
+
+    --height: 1rem;
+    --duration: 0.25s;
     --font-display: "Ginto Normal","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+    
+    --background-color: var(--bluish-purple);
+    --section-color: var(--not-quite-dark);
+    --section-background-white: var(--white);
+    --section-background-off: var(--off-white);
 }
 
 
@@ -385,11 +391,11 @@ input[type="checkbox" i] {
 }
 
 .section-white{
-    background: var(--white);
+    background: var(--section-background-white);
 }
 
 .section-grey{
-    background: var(--off-white);
+    background: var(--section-background-off);
 }
 
 .section__left-container{
@@ -427,14 +433,16 @@ input[type="checkbox" i] {
 }
 
 .section__h1{
+    /* --section-color: var(--not-quite-dark); */
     font-size: 56px;
     font-weight: 700;
     line-height: 120%;
     font-family: var(--font-display);
-    color: var(--not-quite-black);
+    color: var(--section-color);
 }
 
 .section__p{
+    /* --section-color: var(--not-quite-dark); */
     margin-top: 24px;
     font-size: clamp(16px,2vw,20px);
     line-height: 1.625;
@@ -442,7 +450,7 @@ input[type="checkbox" i] {
     font-style: inherit;
     font-family: inherit;
     vertical-align: baseline;
-    color: var(--not-quite-black);
+    color: var(--section-color);
     text-rendering: optimizeLegibility;
     text-align: justify;
 }
