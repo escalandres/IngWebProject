@@ -16,3 +16,7 @@ Puede acceder a la Homepage desde: https://escalandres.github.io/IngWebProject/
 
 ## Dark Theme:
 ![Chat Application Dark](./src/homepage-dark.PNG)
+
+## Agradecimientos:
+
+Este proyecto está inspirado en la UI de Discord. Se da un enorme agradecimiento a Discord por servir como modelo base para el diseño de este proyecto!
