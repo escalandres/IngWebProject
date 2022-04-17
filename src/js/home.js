@@ -14,7 +14,6 @@ function darkMode(){
         
     }
     else{
-        
         darkModeSpan.classList.remove("dark-theme-span");
         darkModeSpan.classList.add("light-them-span");
         darkModeLabel.classList.remove("dark-theme-toggle");

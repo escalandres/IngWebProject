@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Roboto+Slab:wght@100&display=swap');
+
 :root{
     --bluish-purple: rgb(64,78,237);
     --not-quite-dark: #23272a;
@@ -96,7 +97,7 @@
     box-shadow: 0px 6px 6px 0px rgba(30, 30, 31, 0.5);
 }
 
-/* Them btn */
+/* Theme btn */
 
 .theme__container__btn{
     /* border: 10px solid red; */
@@ -382,7 +383,7 @@ input[type="checkbox" i] {
     }
 }
 
-/* Section 1 */
+/* Section 1, 2 y 3 */
 
 .section-area{
     /* width: 922px; */
@@ -411,10 +412,6 @@ input[type="checkbox" i] {
     /* border: 3px solid blue; */
 }
 
-.section__img__container{
-    /* transform: translate(8%,0%); */
-}
-
 .section__img{
     width: 90%;
     height: 80%;
@@ -424,7 +421,8 @@ input[type="checkbox" i] {
     transform: translateX(8%);
 } */
 
-.left{
+.left{ 
+    /*Texto Section 2*/
     transform: translateX(10%);
 }
 
@@ -534,4 +532,62 @@ footer{
     margin-top: 8px;
     display: block;
     text-decoration: underline;
+}
+
+.white-line{
+    color: var(--white);
+    
+}
+
+#pri{
+    height: 4px;
+    width: 20px;
+    
+}
+
+/*  Responsive Design */
+
+@media(max-width:768px){
+    .nav-bar__logo__container{
+        transform: translateX(-45px);
+    }
+    .home__container, #homepage{
+        height: 900px;
+    }
+    .image__left__container{
+        width: 50%;
+        height: 60%;
+        transform: translate(5%, 50%);
+
+    }
+    /* .image__left{
+        width: 50%;
+        height: 60%;
+        transform: translateY(500%);
+    } */
+    .home__container__message{
+        width: 100%;
+        margin-left: -3rem;
+    }
+    .home__main-message{
+        /* font-size: clamp(24px,5vw,34px); */
+        font-size: 40px;
+        width: 100%;
+        transform: translateX(-10%);
+    }
+    .home__message{
+        text-align: justify;
+        padding-left: 50px;
+        width: ;
+    }
+    .home__message__btn{
+        transform: translateX(5%);
+    }
+    .image__right__container{
+        transform: translate(-47%,50%);
+    }
+    .image__right__div{
+        width: 250px;
+        transform: translateX(-10%)
+    }
 }
