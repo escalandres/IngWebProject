@@ -572,7 +572,7 @@ footer{
     }
 
     .home__container, #homepage{
-        height: 900px;
+        height: 745px;
         width: 100%;
         padding: 1px;
         margin-top: 30px;
@@ -613,8 +613,8 @@ footer{
     } */
     .image__left__container{
         width: 50%;
-        height: 60%;
-        transform: translate(35%, 80%);
+        height: 20%;
+        transform: translate(35%, 240%);
     }
     /* .image__right__container{
         width: 50%;
@@ -622,10 +622,13 @@ footer{
         
     } */
     .image__right__container{
-        transform: translate(100%,50%);
+        transform: translate(100%,130%);
     }
     .image__right__div{
         width: 200px;
+    }
+    .robot{
+        display: none;
     }
     .section-area{
         height: 765px;
