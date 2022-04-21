@@ -21,7 +21,8 @@
     --height: 1rem;
     --duration: 0.25s;
     --font-display: "Ginto Normal","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
-    
+    --num-grid-columns: 4;
+
     --background-color: var(--bluish-purple);
     --section-color: var(--not-quite-dark);
     --section-background-white: var(--white);
@@ -545,6 +546,13 @@ footer{
     
 }
 
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(200px,1fr));
+    gap: 20px;
+}
+
 /*  Responsive Design */
 
 @media(max-width:768px){
@@ -578,7 +586,7 @@ footer{
     .home__message{
         text-align: justify;
         padding-left: 50px;
-        width: ;
+        
     }
     .home__message__btn{
         transform: translateX(5%);
@@ -589,5 +597,31 @@ footer{
     .image__right__div{
         width: 250px;
         transform: translateX(-10%)
+    }
+    .section-area{
+        height: 765px;
+        padding: 56px 24px;
+    }
+    .section__left-container{
+        float: none;
+        width: 100%;
+        max-width: 678px;
+        max-height: 440px;
+    }
+    .section__img__container{
+        width: 100%;
+        height: 80%;
+        max-width: 678px;
+        max-height: 440px;
+    }
+    .section__img{
+        max-width: 678px;
+        max-height: 440px;
+        grid-column: span var(--num-grid-columns);
+        width: 100%;
+        height: 100%;
+    }
+    .section__right-container{
+        float: none;
     }
 }
