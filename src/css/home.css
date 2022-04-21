@@ -34,6 +34,7 @@
     background-color: var(--background-color);
 }
 .navbar{
+    width: 100%;
     background-color: var(--background-color);
     /* background-color: aliceblue; */
     height: 80px;
@@ -298,19 +299,21 @@ input[type="checkbox" i] {
     margin-top: 4rem;
 }
 
-.btn__download{
+.home__btn{
     border-radius: 28px;
     font-size: 20px;
     padding: 16px 32px;
-    background-color: var(--letter-color);
+    border-radius: 28px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 24px;
     cursor: pointer;
+}
+
+.btn__download{
+    background-color: var(--letter-color);
     border-color: var(--background-color);
     color: black;
-    border-radius: 28px;
-    font-size: 20px;
-    padding: 16px 32px;
     margin-right: 20px;
 }
 
@@ -324,18 +327,9 @@ input[type="checkbox" i] {
 }
 
 .btn__browser{
-    border-radius: 28px;
-    font-size: 20px;
-    padding: 16px 32px;
     background-color: var(--not-quite-dark);
-    font-weight: 500;
-    line-height: 24px;
-    cursor: pointer;
     border-color: var(--not-quite-dark);
     color: var(--letter-color);
-    border-radius: 28px;
-    font-size: 20px;
-    padding: 16px 32px;
 }
 
 .btn__browser:hover{
@@ -358,7 +352,7 @@ input[type="checkbox" i] {
 .image__right__container{
     position: absolute;
     margin-top: -20%;
-    margin-left: 77%;
+    transform: translateX(520%);
 }
 
 .image__right{
@@ -555,18 +549,26 @@ footer{
 
 /*  Responsive Design */
 
-@media(max-width:768px){
+@media(max-width:420px){
     .nav-bar__logo__container{
         transform: translateX(-45px);
     }
     .home__container, #homepage{
         height: 900px;
+        width: 100%;
+        padding: 1px;
+        margin-top: 30px;
     }
     .image__left__container{
         width: 50%;
         height: 60%;
-        transform: translate(5%, 50%);
+        transform: translate(5%, 70%);
 
+    }
+    .image__right__container{
+        width: 50%;
+        height: 60%;
+        transform: translate(5%, 70%);
     }
     /* .image__left{
         width: 50%;
@@ -575,21 +577,28 @@ footer{
     } */
     .home__container__message{
         width: 100%;
-        margin-left: -3rem;
+        margin-left: -2em;
     }
     .home__main-message{
         /* font-size: clamp(24px,5vw,34px); */
-        font-size: 40px;
+        font-size: 35px;
         width: 100%;
-        transform: translateX(-10%);
+        transform: translateX(8%);
     }
     .home__message{
         text-align: justify;
         padding-left: 50px;
-        
+        font-size: clamp(16px,2vw,20px);
+        transform: translateY(-20%);
     }
     .home__message__btn{
-        transform: translateX(5%);
+        transform: translate(5%,-15%);
+        width: 100%;
+        height: 100%;
+    }
+    .btn__download{
+        margin-top: 1rem;
+        transform: translate(-50%,10%);
     }
     .image__right__container{
         transform: translate(-47%,50%);
