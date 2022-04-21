@@ -549,32 +549,35 @@ footer{
 
 /*  Responsive Design */
 
-@media(max-width:420px){
+@media(max-width:520px){
     .nav-bar__logo__container{
         transform: translateX(-45px);
     }
+    .navbar__text{
+        color: var(--not-quite-dark);
+        padding: 5px 12px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 100;
+        
+    }
+    .navbar__login__btn{
+        transform: translateX(30%);
+        width: 60%;
+        background-color: var(--bluish-purple);
+        color: var(--white);
+    }
+    .navbar__login__btn:hover{
+        color: var(--white);
+    }
+
     .home__container, #homepage{
         height: 900px;
         width: 100%;
         padding: 1px;
         margin-top: 30px;
     }
-    .image__left__container{
-        width: 50%;
-        height: 60%;
-        transform: translate(5%, 70%);
 
-    }
-    .image__right__container{
-        width: 50%;
-        height: 60%;
-        transform: translate(5%, 70%);
-    }
-    /* .image__left{
-        width: 50%;
-        height: 60%;
-        transform: translateY(500%);
-    } */
     .home__container__message{
         width: 100%;
         margin-left: -2em;
@@ -592,20 +595,37 @@ footer{
         transform: translateY(-20%);
     }
     .home__message__btn{
-        transform: translate(5%,-15%);
-        width: 100%;
+        transform: translate(14%,-15%);
+        width: 90%;
         height: 100%;
+        /* border: 5px solid black; */
     }
-    .btn__download{
+    .home__btn{
+        display: block;
+    }
+    .btn__browser{
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    /* .btn__download{
         margin-top: 1rem;
         transform: translate(-50%,10%);
+    } */
+    .image__left__container{
+        width: 50%;
+        height: 60%;
+        transform: translate(35%, 80%);
     }
+    /* .image__right__container{
+        width: 50%;
+        height: 60%;
+        
+    } */
     .image__right__container{
-        transform: translate(-47%,50%);
+        transform: translate(100%,50%);
     }
     .image__right__div{
-        width: 250px;
-        transform: translateX(-10%)
+        width: 200px;
     }
     .section-area{
         height: 765px;
