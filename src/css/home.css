@@ -572,7 +572,7 @@ footer{
     }
 
     .home__container, #homepage{
-        height: 745px;
+        height: 720px;
         width: 100%;
         padding: 1px;
         margin-top: 30px;
@@ -612,9 +612,9 @@ footer{
         transform: translate(-50%,10%);
     } */
     .image__left__container{
-        width: 50%;
-        height: 20%;
-        transform: translate(35%, 240%);
+        width: 70%;
+        height: 40%;
+        transform: translate(35%, 130%);
     }
     /* .image__right__container{
         width: 50%;
@@ -627,7 +627,7 @@ footer{
     .image__right__div{
         width: 200px;
     }
-    .robot{
+    .hidden{
         display: none;
     }
     .section-area{
