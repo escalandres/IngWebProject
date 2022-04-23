@@ -673,6 +673,46 @@ footer{
     .left{ 
         transform: translateX(0%);
     }
+
+    footer{
+        height: 930px;
+        background: var(--background-color);
+        padding: 55px 45px;
+    }
+    
+    .footer__container{
+        height: 200px;
+    }
+    .footer__left-container{
+        height: 100%;
+        width: 100%;
+        float: none;
+    }
+    
+    .footer__h2{
+        font-size: 36px;
+    }
+    
+    .footer__h3{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .footer__right-container{
+        height: 100%;
+        float: none;
+        width: 100%;
+    }
+    
+    .footer__info{
+        float: left;
+        /* border: 3px solid red; */
+        width: 140px;
+        height: 100%;
+    }
+    
+    .company, .politics{
+        transform: translateX(20%);
+    }
 }
 
 
