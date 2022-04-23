@@ -548,8 +548,8 @@ footer{
 }
 
 /*  Responsive Design */
-
-@media(max-width:520px){
+/*Mobile*/
+@media only screen and (max-width:600px){
     .nav-bar__logo__container{
         transform: translateX(-45px);
     }
@@ -607,20 +607,11 @@ footer{
         margin-top: 20px;
         margin-right: 20px;
     }
-    /* .btn__download{
-        margin-top: 1rem;
-        transform: translate(-50%,10%);
-    } */
     .image__left__container{
         width: 70%;
         height: 40%;
         transform: translate(35%, 130%);
     }
-    /* .image__right__container{
-        width: 50%;
-        height: 60%;
-        
-    } */
     .image__right__container{
         transform: translate(100%,130%);
     }
@@ -631,8 +622,8 @@ footer{
         display: none;
     }
     .section-area{
-        height: 765px;
-        padding: 56px 24px;
+        height: 544px;
+        padding: 16px 24px;
     }
     .section__left-container{
         float: none;
@@ -642,7 +633,7 @@ footer{
     }
     .section__img__container{
         width: 100%;
-        height: 80%;
+        height: 70%;
         max-width: 678px;
         max-height: 440px;
     }
@@ -651,9 +642,51 @@ footer{
         max-height: 440px;
         grid-column: span var(--num-grid-columns);
         width: 100%;
-        height: 100%;
+        height: 80%;
+        
+    }
+    .section__h1{
+        width: 100%;
+        font-size: clamp(20px,4vw,40px);
+        font-weight: 700;
+        line-height: 120%;
     }
     .section__right-container{
         float: none;
+        transform: translateY(-75%);
+        /* border: 3px solid black; */
+        width: 100%;
+        height: 40%;
     }
+    .section__text__container{
+        width: 100%;
+    }
+    #section2__left-container{
+        transform: translateY(70%);
+    }
+    #section2__right-container{
+        transform: translateY(-190%);
+    }
+    #section2__right-container > .section__img__container{
+        height: 220px;
+    }
+    .left{ 
+        transform: translateX(0%);
+    }
+}
+
+
+/*Tablet*/
+@media only screen and (max-width:768px){
+
+}
+
+/*Laptop*/
+@media only screen and (max-width:992px){
+
+}
+
+/*Large Screen*/
+@media only screen and (max-width:1200px){
+
 }
