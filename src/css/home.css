@@ -620,6 +620,7 @@ footer{
     .image__left__container{
         width: 70%;
         height: 40%;
+        margin-top: 40px;
         transform: translate(35%, 130%);
     }
     .image__right__container{
