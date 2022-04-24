@@ -104,7 +104,7 @@
 .theme__container__btn{
     /* border: 10px solid red; */
     padding-top: 26px;
-    transform: translateX(-100%);
+    transform: translateX(2500%);
 }
 
 
