@@ -1117,6 +1117,7 @@ footer{
 
     .navbar__start{
         margin: 0;
+        width: 520px;
     }
     .navbar__end{
         transform: translate(35%,5%);
@@ -1153,7 +1154,9 @@ footer{
     .navbar__brand{
         transform: translateY(20%);
     }
-
+    .drop{
+        width: 95px;
+    }
     .home__container, #homepage{
         height: 720px;
         width: 100%;
